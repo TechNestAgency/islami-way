@@ -13,9 +13,10 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Almajd-Academy</title>
+    <title>Bilal-Ibn-Rabah</title>
 
-    <meta name="description" content="" />
+    <meta name="description" content="Quran Online Academy" />
+    <meta name="keywords" content="Quran Online Academy">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{asset('logo.png')}}" />
@@ -74,9 +75,9 @@
                 <!-- Mobile menu toggle: End-->
                 <a href="{{url('/')}}" class="app-brand-link">
               <span class="app-brand-logo demo">
-                <img src="{{asset('logo.png')}}" style="width:50px">
+                <img src="{{asset('logo.png')}}" style="width:30px">
               </span>
-                    <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">Almajd</span>
+                    <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">Bilal-Ibn-Rabah</span>
                 </a>
             </div>
             <!-- Menu logo wrapper: End -->
@@ -114,6 +115,9 @@
                     <li class="nav-item">
                         <a class="nav-link fw-medium" href="#landingPricing">Pricing</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#OurStudents">OurStudents</a>
+                    </li>
                 </ul>
             </div>
             <div class="landing-menu-overlay d-lg-none"></div>
@@ -139,33 +143,164 @@
 
 <div data-bs-spy="scroll" class="scrollspy-example">
     <!-- Hero: Start -->
-    <section id="hero-animation">
-        <div id="landingHero" class="section-py landing-hero position-relative" style="height: 70vh;">
-            <div class="container">
-                <div class="hero-text-box text-center">
-                    <h1 class="text-primary hero-title display-4 fw-bold"> Learning the Qur'an and the Arabic language</h1>
-                    <h2 class="hero-sub-title h6 mb-4 pb-1">
-                        Top quality Quran courses online are available<br class="d-none d-lg-block" />
-                        at times convenient for you.
-                    </h2>
-                    <div class="landing-hero-btn d-inline-block position-relative">
-                <span class="hero-btn-item position-absolute d-none d-md-flex text-heading">Join community<img
-                      src="{{asset('assets/img/front-pages/icons/Join-community-arrow.png')}}"
-                      alt="Join community arrow"
-                      class="scaleX-n1-rtl"
-                  /></span>
-                        <a href="#landingContact" class="btn btn-primary">Start Enroll Now </a>
+    <section id="landingHero" class="section-py landing-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-text-content text-center text-lg-start">
+                        <span class="badge bg-label-primary mb-3">Bilal-Ibn-Rabah Academy</span>
+                        <h1 class="display-3 fw-bold mb-4">
+                            Master the Holy Qur'an & The Arabic Language
+                        </h1>
+                        <p class="lead mb-5">
+                            Embark on a transformative journey with our expert-led courses. Personalized learning, flexible schedules, and a supportive community await you.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                            <a href="#landingContact" class="btn btn-primary btn-lg">Enroll Now for a Free Trial</a>
+                            <a href="#landingCourses" class="btn btn-outline-secondary btn-lg">Explore Our Courses</a>
+                        </div>
                     </div>
                 </div>
-                <div id="heroDashboardAnimation" class="hero-animation-img">
+                <div class="col-lg-6">
+                    <div class="hero-image-container mt-5 mt-lg-0">
+                        <img src="{{asset('quran.jpg')}}" alt="Quran learning" class="hero-image" />
+                        <div class="hero-image-overlay"></div>
+                        <div class="hero-image-decoration hero-image-decoration-1"></div>
+                        <div class="hero-image-decoration hero-image-decoration-2"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Hero: End -->
 
+    <style>
+    .landing-hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(135deg, #f5f7fa 0%, #eef2f5 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .landing-hero::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(var(--bs-primary-rgb), 0.05) 0%, rgba(var(--bs-primary-rgb), 0) 70%);
+        animation: rotateBackground 20s linear infinite;
+        z-index: 0;
+    }
+
+    @keyframes rotateBackground {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .hero-text-content {
+        animation: slideInFromLeft 1s ease-out;
+        position: relative;
+        z-index: 1;
+    }
+
+    @keyframes slideInFromLeft {
+        from { opacity: 0; transform: translateX(-30px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    .hero-image-container {
+        position: relative;
+        animation: slideInFromRight 1s ease-out;
+        z-index: 1;
+    }
+
+    @keyframes slideInFromRight {
+        from { opacity: 0; transform: translateX(30px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    .hero-image {
+        width: 100%;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-image-overlay {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, rgba(var(--bs-primary-rgb), 0.1), transparent);
+        border-radius: 1rem;
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    .hero-image-decoration {
+        position: absolute;
+        border-radius: 1rem;
+        z-index: 1;
+        transition: all 0.5s ease-out;
+    }
+
+    .hero-image-container:hover .hero-image-decoration-1 {
+        transform: rotate(-8deg) scale(1.05);
+    }
+
+    .hero-image-container:hover .hero-image-decoration-2 {
+        transform: rotate(6deg) scale(1.05);
+    }
+
+
+    .hero-image-decoration-1 {
+        width: 100%;
+        height: 100%;
+        top: -1rem;
+        left: -1rem;
+        background: linear-gradient(135deg, var(--bs-warning), var(--bs-danger));
+        transform: rotate(-5deg);
+        opacity: 0.8;
+    }
+
+    .hero-image-decoration-2 {
+        width: 100%;
+        height: 100%;
+        bottom: -1rem;
+        right: -1rem;
+        background: linear-gradient(135deg, var(--bs-info), var(--bs-success));
+        transform: rotate(3deg);
+    }
+
+    .btn-primary {
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(var(--bs-primary-rgb), 0.3);
+    }
+
+    .btn-outline-secondary:hover {
+        transform: translateY(-3px);
+    }
+
+    .islamic-bg {
+        background-color: #f8f9fa;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4d4d8' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    </style>
+
     <!-- Useful features: Start -->
-    <section id="landingFeatures" class="section-py landing-features">
+    <section id="landingFeatures" class="section-py landing-features islamic-bg">
         <div class="container">
             <div class="text-center mb-3 pb-1">
                 <span class="badge bg-label-primary">Useful Features</span>
@@ -222,10 +357,10 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 text-center features-icon-box">
                     <div class="text-center mb-3">
-                        <img src="{{asset('woman.png')}}" alt="google docs" style="width:70px"/>
+                        <img src="{{asset('couple.png')}}" alt="google docs" style="width:70px"/>
                     </div>
-                    <h5 class="mb-3">Female Tutors</h5>
-                    <p class="features-icon-description">Experienced Female Quran Tutors at our academy for sisters who are comfortable with learning from females only.</p>
+                    <h5 class="mb-3">Males&Females Tutors</h5>
+                    <p class="features-icon-description">Experienced Male and Female Quran Tutors at our academy, offering options for both brothers and sisters who prefer learning from tutors of the same gender.</p>
                 </div>
             </div>
         </div>
@@ -233,7 +368,7 @@
     <!-- Useful features: End -->
 
     <!-- Real customers reviews: Start -->
-    <section id="FeedBack" class="section-py bg-body landing-reviews pb-0">
+    <section id="FeedBack" class="section-py landing-reviews pb-0 islamic-bg">
         <!-- What people say slider: Start -->
         <div class="container">
             <div class="row align-items-center gx-0 gy-4 g-lg-5">
@@ -263,8 +398,8 @@
                                     <div class="card h-100">
                                         <div class="card-body text-body d-flex flex-column justify-content-between h-100">
                                             <p class="text-center">
-                                                “I've tried various online platforms to learn Quran and Arabic, but none have compared to the experience I've had at this academy. The curriculum is well-structured and the
-                                                instructors are highly qualified.”
+                                                "I've tried various online platforms to learn Quran and Arabic, but none have compared to the experience I've had at this academy. The curriculum is well-structured and the
+                                                instructors are highly qualified."
                                             </p>
                                             <div class="text-warning d-flex align-items-center mb-3 justify-content-center">
                                                 <i class="bx bxs-star bx-sm"></i>
@@ -374,7 +509,7 @@
     <!-- Real customers reviews: End -->
 
     <!-- Courses -->
-    <section id="landingCourses" class="section-py landing-fun-facts">
+    <section id="landingCourses" class="section-py landing-fun-facts islamic-bg">
         <div class="container">
             <div class="text-center mb-3 pb-1">
                 <span class="badge bg-label-primary">Courses</span>
@@ -392,7 +527,7 @@
                             <img src="{{asset('6.png')}}" alt="laptop" class="mb-2" style="width:70px"/>
                             <h5 class="h2 mb-1">Quran</h5>
                             <p class="fw-medium mb-0">
-                                you can learn how to memorise the Holy Qur’an and become a Hafiz/Hafiz of the Qur’an.
+                                you can learn how to memorise the Holy Qur'an and become a Hafiz/Hafiz of the Qur'an.
                             </p><br>
                             <a href="#" class="btn btn-primary">Enroll Now</a>
                         </div>
@@ -440,7 +575,7 @@
     <!-- Courses -->
 
     <!-- Pricing plans: Start -->
-    <section id="landingPricing" class="section-py landing-pricing bg-body">
+    <section id="landingPricing" class="section-py landing-pricing islamic-bg">
         <div class="container">
             <div class="text-center mb-3 pb-1">
                 <span class="badge bg-label-primary">Pricing Plans</span>
@@ -746,7 +881,7 @@
     <!-- Pricing plans: End -->
 
     <!-- Fun facts: Start -->
-    <section id="landingFunFacts" class="section-py landing-fun-facts">
+    <section id="landingFunFacts" class="section-py landing-fun-facts islamic-bg">
         <div class="container">
             <div class="row gy-3">
                 <div class="col-sm-6 col-lg-3">
@@ -803,7 +938,7 @@
     <!-- Fun facts: End -->
 
     <!-- FAQ: Start -->
-    <section id="landingFAQ" class="section-py bg-body landing-faq">
+    <section id="landingFAQ" class="section-py landing-faq islamic-bg">
         <div class="container">
             <div class="text-center mb-3 pb-1">
                 <span class="badge bg-label-primary">FAQ</span>
@@ -946,7 +1081,7 @@
     <!-- FAQ: End -->
 
     <!-- Contact Us: Start -->
-    <section id="landingContact" class="section-py landing-contact">
+    <section id="landingContact" class="section-py landing-contact islamic-bg">
         <div class="container">
             <div class="text-center mb-3 pb-1">
                 <span class="badge bg-label-primary">Enroll Now</span>
@@ -968,7 +1103,7 @@
                                         <div>
                                             <p class="mb-0">Email</p>
                                             <h5 class="mb-0">
-                                                <a href="mailto:elmajd1000@gmail.com" class="text-heading">elmajd1000@gmail.com</a>
+                                                <a href="mailto:elmajd1000@gmail.com" class="text-heading">emadelwan055@gmail.com</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -980,7 +1115,7 @@
                                         </div>
                                         <div>
                                             <p class="mb-0">Phone</p>
-                                            <h5 class="mb-0"><a href="tel:+1234-568-963" class="text-heading">+201554134201</a></h5>
+                                            <h5 class="mb-0"><a href="tel:+1234-568-963" class="text-heading">+201012935526</a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1035,12 +1170,9 @@
                                     <div class="col-md-4">
                                         <label class="form-label" for="contact-form-fullname">Course Title </label>
                                         <select type="number" class="form-control" required name="course" id="contact-form-fullname">
-                                            <option value="male">QURAN</option>
-                                            <option value="fiqh">FIQH</option>
-                                            <option value="aqeedah">AQEEDAH</option>
-                                            <option value="tajweed">TAJWEED</option>
-                                            <option value="hadith">HADITH</option>
-                                            <option value="arabic">ARABIC</option>
+                                            <option value="Quran with tajweed">Quran with tajweed</option>
+                                            <option value="Arabic">Arabic</option>
+                                            <option value="Islamic studies">Islamic studies</option>
                                         </select>
                                     </div>
 
@@ -1115,7 +1247,17 @@
         </script>
     </section>
     <!-- Contact Us: End -->
+
+    <!-- FAQ: Start -->
+    <!-- FAQ: End -->
 </div>
+
+<script>
+    $('#videoModal1').on('hide.bs.modal', function (e) {
+        var video = $("video")[0]; // assuming you have only one video on the page
+        video.pause();
+    });
+</script>
 
 <!-- / Sections:End -->
 
@@ -1129,10 +1271,10 @@
                 <span class="app-brand-logo demo">
                     <img src="{{asset('logo.png')}}" width="50px">
                 </span>
-                        <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">Almajd</span>
+                        <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">Hafiz</span>
                     </a>
                     <p class="footer-text footer-logo-description mb-4">
-                        Established 4 years ago, have many student from around the world.
+                        Established 6 years ago, have many student from around the world.
                     </p>
                     <a class="btn btn-primary shadow-none rounded-0 rounded-end-bottom rounded-end-top" href="#Enroll">Enroll Now</a>
                 </div>
@@ -1164,10 +1306,13 @@
                             <a href="#FeedBack" class="footer-link">FeedBack</a>
                         </li>
                         <li class="mb-3">
-                            <a href="help-center-landing.html" class="footer-link">Courses</a>
+                            <a href="#landingCourses" class="footer-link">Courses</a>
                         </li>
                         <li class="mb-3">
                             <a href="#landingFeatures" class="footer-link">Features</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#OurStudents" class="footer-link">OurStudents</a>
                         </li>
                     </ul>
                 </div>
@@ -1184,7 +1329,7 @@
                 document.write(new Date().getFullYear());
               </script>
             </span>
-                <a href="https://pixinvent.com" target="_blank" class="fw-medium text-white footer-link">Almajd Academy</a>
+                <a href="https://www.facebook.com/profile.php?id=61571489512337" target="_blank" class="fw-medium text-white footer-link">Created By Tech-Nest Agency</a>
             </div>
         </div>
     </div>
