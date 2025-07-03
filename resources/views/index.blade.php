@@ -25,7 +25,7 @@
     <link rel="preconnect" href="{{url('https://fonts.googleapis.com')}}" />
     <link rel="preconnect" href="{{url('https://fonts.gstatic.com')}}" crossorigin />
     <link
-        href="{{asset('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap')}}"
+        href="{{asset('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap')}}"
         rel="stylesheet" />
 
     <link rel="stylesheet" href="{{asset('assets/vendor/fonts/boxicons.css')}}" />
@@ -49,6 +49,23 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="{{asset('assets/js/front-config.js')}}"></script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif !important;
+        }
+        * {
+            font-family: 'Cairo', sans-serif !important;
+        }
+        .landing-live-sessions video {
+            display: block;
+            margin: 0 auto;
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -130,6 +147,15 @@
                     ><span class="tf-icons bx bx-user me-md-1"></span
                         ><span class="d-none d-md-block">Enroll Now</span></a
                     >
+                </li>
+                <!-- Language Switcher -->
+                <li class="nav-item dropdown ms-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="langSwitcher" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="langSwitcher">
+                        <li><a class="dropdown-item" href="/">العربية</a></li>
+                    </ul>
                 </li>
                 <!-- navbar button: End -->
             </ul>
@@ -574,6 +600,46 @@
     </section>
     <!-- Courses -->
 
+    <!-- Live Sessions: Start -->
+    <section id="liveSessions" class="section-py landing-live-sessions islamic-bg">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">Live Sessions</span>
+            </div>
+            <h3 class="text-center mb-1">
+                <span class="section-title">Live Sessions with Our Teachers</span>
+            </h3>
+            <p class="text-center mb-3 mb-md-5 pb-3">
+                Watch some recorded live sessions with our teachers.
+            </p>
+            <div class="row gy-4 justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mb-3">Live Session 1</h5>
+                                                    <video controls style="width: 100%; max-width: 400px; height: auto; border-radius: 10px;">
+                            <source src="/vid1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mb-3">Live Session 2</h5>
+                                                    <video controls style="width: 100%; max-width: 400px; height: auto; border-radius: 10px;">
+                            <source src="/vid2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Live Sessions: End -->
+
     <!-- Pricing plans: Start -->
     <section id="landingPricing" class="section-py landing-pricing islamic-bg">
         <div class="container">
@@ -593,7 +659,7 @@
                                     class="mb-4 pb-2 scaleX-n1-rtl" />
                                 <h4 class="mb-1">Package 1</h4>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">5.25 pounds</span>
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$5.25</span>
                                     <sub class="h6 text-muted mb-0 ms-1">/week</sub>
                                 </div>
                             </div>
@@ -643,7 +709,7 @@
                                     class="mb-4 pb-2 scaleX-n1-rtl" />
                                 <h4 class="mb-1">Package 2</h4>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">7 pounds</span>
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$7.00</span>
                                     <sub class="h6 text-muted mb-0 ms-1">/week</sub>
                                 </div>
                             </div>
@@ -692,7 +758,7 @@
                                     class="mb-4 pb-2 scaleX-n1-rtl" />
                                 <h4 class="mb-1">Package 3</h4>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">8.75 pounds</span>
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$8.75</span>
                                     <sub class="h6 text-muted mb-0 ms-1">/week</sub>
                                 </div>
                             </div>
@@ -740,7 +806,7 @@
                                     class="mb-4 pb-2 scaleX-n1-rtl" />
                                 <h4 class="mb-1">Package 4</h4>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">7 pounds</span>
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$7.00</span>
                                     <sub class="h6 text-muted mb-0 ms-1">/week</sub>
                                 </div>
                             </div>
@@ -788,7 +854,7 @@
                                     class="mb-4 pb-2 scaleX-n1-rtl" />
                                 <h4 class="mb-1">Package 5</h4>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">10.50 pounds</span>
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$10.50</span>
                                     <sub class="h6 text-muted mb-0 ms-1">/week</sub>
                                 </div>
                             </div>
@@ -836,7 +902,7 @@
                                     class="mb-4 pb-2 scaleX-n1-rtl" />
                                 <h4 class="mb-1">Package 6</h4>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">14 pounds</span>
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$14.00</span>
                                     <sub class="h6 text-muted mb-0 ms-1">/week</sub>
                                 </div>
                             </div>
@@ -1271,7 +1337,7 @@
                 <span class="app-brand-logo demo">
                     <img src="{{asset('logo.png')}}" width="50px">
                 </span>
-                        <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">Hafiz</span>
+                        <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">Bilal-Ibn-Rabah</span>
                     </a>
                     <p class="footer-text footer-logo-description mb-4">
                         Established 6 years ago, have many student from around the world.

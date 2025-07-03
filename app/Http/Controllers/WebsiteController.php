@@ -10,6 +10,11 @@ class WebsiteController extends Controller
 {
     public function index()
     {
+        return view('index_ar'); // Arabic is now default
+    }
+
+    public function indexEn()
+    {
         return view('index');
     }
 
