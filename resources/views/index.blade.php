@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Bilal-Ibn-Rabah</title>
+    <title>Quran Way</title>
 
     <meta name="description" content="Quran Online Academy" />
     <meta name="keywords" content="Quran Online Academy">
@@ -65,6 +65,311 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+
+        /* New Hero Section Styles */
+        .landing-hero {
+            position: relative;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .hero-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(255,255,255,0.05) 0%, transparent 50%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, 
+                rgba(102, 126, 234, 0.8) 0%, 
+                rgba(118, 75, 162, 0.8) 50%, 
+                rgba(255, 107, 107, 0.6) 100%);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero-text-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        .hero-badge-wrapper {
+            display: inline-block;
+        }
+
+        .hero-badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+        }
+
+        .hero-title-line {
+            display: block;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .hero-title-highlight {
+            display: block;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 4rem;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 3rem;
+        }
+
+        .hero-stats {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFD700;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-hero-primary {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            border: none;
+            color: #333;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-hero-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
+            color: #333;
+        }
+
+        .btn-hero-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-hero-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            color: white;
+        }
+
+        .hero-visual-container {
+            position: relative;
+            z-index: 2;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-main-image {
+            position: relative;
+            width: 400px;
+            height: 500px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-image-glow {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            background: linear-gradient(45deg, #FFD700, #FFA500, #FF6B6B);
+            border-radius: 30px;
+            z-index: 1;
+            opacity: 0.3;
+            filter: blur(20px);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { opacity: 0.3; transform: scale(1); }
+            to { opacity: 0.5; transform: scale(1.05); }
+        }
+
+        .floating-card {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            animation: float 4s ease-in-out infinite;
+            z-index: 3;
+        }
+
+        .floating-card-1 {
+            top: 10%;
+            left: -10%;
+            animation-delay: 0s;
+        }
+
+        .floating-card-2 {
+            top: 60%;
+            right: -10%;
+            animation-delay: 1s;
+        }
+
+        .floating-card-3 {
+            bottom: 10%;
+            left: 20%;
+            animation-delay: 2s;
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .card-content h6 {
+            margin: 0;
+            font-weight: 700;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .card-content p {
+            margin: 0;
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-title-highlight {
+                font-size: 3rem;
+            }
+            
+            .hero-visual-container {
+                height: 400px;
+                margin-top: 2rem;
+            }
+            
+            .hero-main-image {
+                width: 300px;
+                height: 350px;
+            }
+            
+            .floating-card {
+                display: none;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 
@@ -94,7 +399,7 @@
               <span class="app-brand-logo demo">
                 <img src="{{asset('logo.png')}}" style="width:30px">
               </span>
-                    <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">Bilal-Ibn-Rabah</span>
+                    <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">Quran Way</span>
                 </a>
             </div>
             <!-- Menu logo wrapper: End -->
@@ -148,15 +453,6 @@
                         ><span class="d-none d-md-block">Enroll Now</span></a
                     >
                 </li>
-                <!-- Language Switcher -->
-                <li class="nav-item dropdown ms-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="langSwitcher" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        English
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="langSwitcher">
-                        <li><a class="dropdown-item" href="/">العربية</a></li>
-                    </ul>
-                </li>
                 <!-- navbar button: End -->
             </ul>
             <!-- Toolbar: End -->
@@ -170,29 +466,95 @@
 <div data-bs-spy="scroll" class="scrollspy-example">
     <!-- Hero: Start -->
     <section id="landingHero" class="section-py landing-hero">
-        <div class="container">
-            <div class="row align-items-center">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-100">
                 <div class="col-lg-6">
-                    <div class="hero-text-content text-center text-lg-start">
-                        <span class="badge bg-label-primary mb-3">Bilal-Ibn-Rabah Academy</span>
-                        <h1 class="display-3 fw-bold mb-4">
-                            Master the Holy Qur'an & The Arabic Language
+                    <div class="hero-text-content">
+                        <div class="hero-badge-wrapper mb-4">
+                            <span class="hero-badge">
+                                <i class="bx bx-star me-2"></i>
+                                Premium Academy
+                            </span>
+                        </div>
+                        <h1 class="hero-title mb-4">
+                            <span class="hero-title-line">Transform Your</span>
+                            <span class="hero-title-highlight">Spiritual Journey</span>
+                            <span class="hero-title-line">With Expert Guidance</span>
                         </h1>
-                        <p class="lead mb-5">
-                            Embark on a transformative journey with our expert-led courses. Personalized learning, flexible schedules, and a supportive community await you.
+                        <p class="hero-description mb-5">
+                            Join thousands of students worldwide in mastering the Holy Quran, Arabic language, and Islamic studies. Experience personalized learning with certified scholars and flexible scheduling.
                         </p>
-                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-                            <a href="#landingContact" class="btn btn-primary btn-lg">Enroll Now for a Free Trial</a>
-                            <a href="#landingCourses" class="btn btn-outline-secondary btn-lg">Explore Our Courses</a>
+                        <div class="hero-stats mb-5">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number">1000+</div>
+                                        <div class="stat-label">Students</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number">50+</div>
+                                        <div class="stat-label">Teachers</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number">6+</div>
+                                        <div class="stat-label">Years</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#landingContact" class="btn btn-hero-primary">
+                                <span class="btn-text">Start Free Trial</span>
+                                <span class="btn-icon"><i class="bx bx-right-arrow-alt"></i></span>
+                            </a>
+                            <a href="#landingCourses" class="btn btn-hero-secondary">
+                                <i class="bx bx-play-circle me-2"></i>
+                                Watch Demo
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="hero-image-container mt-5 mt-lg-0">
-                        <img src="{{asset('quran.jpg')}}" alt="Quran learning" class="hero-image" />
-                        <div class="hero-image-overlay"></div>
-                        <div class="hero-image-decoration hero-image-decoration-1"></div>
-                        <div class="hero-image-decoration hero-image-decoration-2"></div>
+                    <div class="hero-visual-container">
+                        <div class="hero-main-image">
+                            <img src="{{asset('quran.jpg')}}" alt="Quran learning" class="hero-image" />
+                            <div class="hero-image-glow"></div>
+                        </div>
+                        <div class="floating-card floating-card-1">
+                            <div class="card-icon">
+                                <i class="bx bx-book-open"></i>
+                            </div>
+                            <div class="card-content">
+                                <h6>Live Classes</h6>
+                                <p>Interactive sessions</p>
+                            </div>
+                        </div>
+                        <div class="floating-card floating-card-2">
+                            <div class="card-icon">
+                                <i class="bx bx-time"></i>
+                            </div>
+                            <div class="card-content">
+                                <h6>24/7 Support</h6>
+                                <p>Always available</p>
+                            </div>
+                        </div>
+                        <div class="floating-card floating-card-3">
+                            <div class="card-icon">
+                                <i class="bx bx-trophy"></i>
+                            </div>
+                            <div class="card-content">
+                                <h6>Certified</h6>
+                                <p>Expert teachers</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,128 +563,73 @@
     <!-- Hero: End -->
 
     <style>
-    .landing-hero {
-        min-height: 90vh;
-        display: flex;
-        align-items: center;
-        background: linear-gradient(135deg, #f5f7fa 0%, #eef2f5 100%);
-        position: relative;
-        overflow: hidden;
-    }
+            .islamic-bg {
+            background-color: #f8f9fa;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4d4d8' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
 
-    .landing-hero::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(circle, rgba(var(--bs-primary-rgb), 0.05) 0%, rgba(var(--bs-primary-rgb), 0) 70%);
-        animation: rotateBackground 20s linear infinite;
-        z-index: 0;
-    }
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            animation: whatsapp-bounce 2s infinite;
+        }
 
-    @keyframes rotateBackground {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-    }
+        .whatsapp-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
 
-    .hero-text-content {
-        animation: slideInFromLeft 1s ease-out;
-        position: relative;
-        z-index: 1;
-    }
+        .whatsapp-link:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+            color: white;
+        }
 
-    @keyframes slideInFromLeft {
-        from { opacity: 0; transform: translateX(-30px); }
-        to { opacity: 1; transform: translateX(0); }
-    }
+        .whatsapp-link i {
+            font-size: 30px;
+        }
 
-    .hero-image-container {
-        position: relative;
-        animation: slideInFromRight 1s ease-out;
-        z-index: 1;
-    }
+        @keyframes whatsapp-bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
 
-    @keyframes slideInFromRight {
-        from { opacity: 0; transform: translateX(30px); }
-        to { opacity: 1; transform: translateX(0); }
-    }
-
-    .hero-image {
-        width: 100%;
-        border-radius: 1rem;
-        box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
-        position: relative;
-        z-index: 2;
-    }
-
-    .hero-image-overlay {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, rgba(var(--bs-primary-rgb), 0.1), transparent);
-        border-radius: 1rem;
-        z-index: 3;
-        pointer-events: none;
-    }
-
-    .hero-image-decoration {
-        position: absolute;
-        border-radius: 1rem;
-        z-index: 1;
-        transition: all 0.5s ease-out;
-    }
-
-    .hero-image-container:hover .hero-image-decoration-1 {
-        transform: rotate(-8deg) scale(1.05);
-    }
-
-    .hero-image-container:hover .hero-image-decoration-2 {
-        transform: rotate(6deg) scale(1.05);
-    }
-
-
-    .hero-image-decoration-1 {
-        width: 100%;
-        height: 100%;
-        top: -1rem;
-        left: -1rem;
-        background: linear-gradient(135deg, var(--bs-warning), var(--bs-danger));
-        transform: rotate(-5deg);
-        opacity: 0.8;
-    }
-
-    .hero-image-decoration-2 {
-        width: 100%;
-        height: 100%;
-        bottom: -1rem;
-        right: -1rem;
-        background: linear-gradient(135deg, var(--bs-info), var(--bs-success));
-        transform: rotate(3deg);
-    }
-
-    .btn-primary {
-        transition: all 0.3s ease;
-    }
-
-    .btn-primary:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(var(--bs-primary-rgb), 0.3);
-    }
-
-    .btn-outline-secondary:hover {
-        transform: translateY(-3px);
-    }
-
-    .islamic-bg {
-        background-color: #f8f9fa;
-        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4d4d8' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-
+        /* Responsive WhatsApp button */
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .whatsapp-link {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .whatsapp-link i {
+                font-size: 25px;
+            }
+        }
     </style>
 
     <!-- Useful features: Start -->
@@ -600,45 +907,7 @@
     </section>
     <!-- Courses -->
 
-    <!-- Live Sessions: Start -->
-    <section id="liveSessions" class="section-py landing-live-sessions islamic-bg">
-        <div class="container">
-            <div class="text-center mb-3 pb-1">
-                <span class="badge bg-label-primary">Live Sessions</span>
-            </div>
-            <h3 class="text-center mb-1">
-                <span class="section-title">Live Sessions with Our Teachers</span>
-            </h3>
-            <p class="text-center mb-3 mb-md-5 pb-3">
-                Watch some recorded live sessions with our teachers.
-            </p>
-            <div class="row gy-4 justify-content-center">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-center mb-3">Live Session 1</h5>
-                                                    <video controls style="width: 100%; max-width: 400px; height: auto; border-radius: 10px;">
-                            <source src="/vid1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-center mb-3">Live Session 2</h5>
-                                                    <video controls style="width: 100%; max-width: 400px; height: auto; border-radius: 10px;">
-                            <source src="/vid2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Live Sessions: End -->
+
 
     <!-- Pricing plans: Start -->
     <section id="landingPricing" class="section-py landing-pricing islamic-bg">
@@ -1169,7 +1438,7 @@
                                         <div>
                                             <p class="mb-0">Email</p>
                                             <h5 class="mb-0">
-                                                <a href="mailto:elmajd1000@gmail.com" class="text-heading">emadelwan055@gmail.com</a>
+                                                <a href="mailto:tolba960@gmail.com" class="text-heading">tolba960@gmail.com</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -1181,7 +1450,7 @@
                                         </div>
                                         <div>
                                             <p class="mb-0">Phone</p>
-                                            <h5 class="mb-0"><a href="tel:+1234-568-963" class="text-heading">+201012935526</a></h5>
+                                            <h5 class="mb-0"><a href="tel:+201033998231" class="text-heading">+20 10 33998231</a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1335,9 +1604,9 @@
                 <div class="col-lg-5">
                     <a href="#landingHero" class="app-brand-link mb-4">
                 <span class="app-brand-logo demo">
-                    <img src="{{asset('logo.png')}}" width="50px">
+                    <img src="{{asset('logo.png')}}" width="30px">
                 </span>
-                        <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">Bilal-Ibn-Rabah</span>
+                        <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">Quran Way</span>
                     </a>
                     <p class="footer-text footer-logo-description mb-4">
                         Established 6 years ago, have many student from around the world.
@@ -1418,5 +1687,13 @@
 
 <!-- Page JS -->
 <script src="{{asset('assets/js/front-page-landing.js')}}"></script>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-float">
+    <a href="https://wa.me/201033998231" target="_blank" class="whatsapp-link">
+        <i class="bx bxl-whatsapp"></i>
+    </a>
+</div>
+
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <title>أكاديمية بلال بن رباح</title>
+    <title>Quran Way</title>
     <meta name="description" content="أكاديمية القرآن الكريم عبر الإنترنت" />
     <meta name="keywords" content="أكاديمية القرآن الكريم عبر الإنترنت">
     <link rel="icon" type="image/x-icon" href="{{asset('logo.png')}}" />
@@ -57,7 +57,7 @@
               <span class="app-brand-logo demo">
                 <img src="{{asset('logo.png')}}" style="width:30px">
               </span>
-                    <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">بلال بن رباح</span>
+                    <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">Quran Way</span>
                 </a>
             </div>
             <!-- Menu logo wrapper: End -->
@@ -85,15 +85,6 @@
                 <li>
                     <a href="#landingContact" class="btn btn-primary"><span class="tf-icons bx bx-user me-md-1"></span><span class="d-none d-md-block">سجل الآن</span></a>
                 </li>
-                <!-- Language Switcher -->
-                <li class="nav-item dropdown ms-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="langSwitcher" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        العربية
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="langSwitcher">
-                        <li><a class="dropdown-item" href="/en">English</a></li>
-                    </ul>
-                </li>
                 <!-- navbar button: End -->
             </ul>
             <!-- Toolbar: End -->
@@ -110,7 +101,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="hero-text-content text-center text-lg-start">
-                        <span class="badge bg-label-primary mb-3">أكاديمية بلال بن رباح</span>
+                        <span class="badge bg-label-primary mb-3">Quran Way Academy</span>
                         <h1 class="display-3 fw-bold mb-4">
                             أتقن القرآن الكريم واللغة العربية
                         </h1>
@@ -1132,7 +1123,7 @@
                 <span class="app-brand-logo demo">
                     <img src="{{asset('logo.png')}}" width="50px">
                 </span>
-                        <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">بلال بن رباح</span>
+                        <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">Quran Way</span>
                     </a>
                     <p class="footer-text footer-logo-description mb-4">
                         تأسست منذ 6 سنوات، ولديها العديد من الطلاب من جميع أنحاء العالم.

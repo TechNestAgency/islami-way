@@ -35,7 +35,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-5DDHKGP');
     </script>
     <!-- End Google Tag Manager -->
-    <title>Bilal-Ibn-Rabah</title>
+    <title>Quran Way</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
