@@ -854,51 +854,41 @@
                 These Courses We Provide For Adults & Kids
             </p>
             <div class="row gy-3">
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-4">
                     <div class="card border border-label-primary shadow-none">
                         <div class="card-body text-center">
-                            <img src="{{asset('6.png')}}" alt="laptop" class="mb-2" style="width:70px"/>
-                            <h5 class="h2 mb-1">Quran</h5>
+                            <img src="{{asset('6.png')}}" alt="Quran Iqraa" class="mb-2" style="width:70px"/>
+                            <h5 class="h2 mb-1">Quran Iqraa Classes</h5>
                             <p class="fw-medium mb-0">
-                                you can learn how to memorise the Holy Qur'an and become a Hafiz/Hafiz of the Qur'an.
+                                Learn the fundamentals of Quran reading with proper pronunciation and tajweed rules. Perfect for beginners starting their Quranic journey.
                             </p><br>
-                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <a href="#landingContact" class="btn btn-primary">Enroll Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+            
+                <div class="col-sm-6 col-lg-4">
                     <div class="card border border-label-success shadow-none">
                         <div class="card-body text-center">
-                            <img src="{{asset('7.png')}}" alt="laptop" class="mb-2" style="width:70px"/>
-                            <h5 class="h2 mb-1">Fiqh</h5>
+                            <img src="{{asset('family.png')}}" alt="Quran Recitation for Kids" class="mb-2" style="width:70px"/>
+                            <h5 class="h2 mb-1">Quran Recitation for Kids</h5>
                             <p class="fw-medium mb-0">
-                                FIQH provides clear guidance on how to lead a good and meaningful life in accordance with Islamic teachings.
+                                Specially designed interactive classes for children to learn Quran recitation in a fun and engaging environment with experienced teachers.
                             </p><br>
-                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <a href="#landingContact" class="btn btn-primary">Enroll Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card border border-label-info shadow-none">
-                        <div class="card-body text-center">
-                            <img src="{{asset('8.png')}}" alt="laptop" class="mb-2" style="width:70px"/>
-                            <h5 class="h2 mb-1">Aqeedah</h5>
-                            <p class="fw-medium mb-0">
-                                Learning the correct Islamic Aqeedah is mandatory for our lives and to determine our destiny in the hereafter.
-                            </p><br>
-                            <a href="#" class="btn btn-primary">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
+
+                <div class="col-sm-6 col-lg-4">
                     <div class="card border border-label-warning shadow-none">
                         <div class="card-body text-center">
-                            <img src="{{asset('9.png')}}" alt="laptop" class="mb-2" style="width:70px"/>
-                            <h5 class="h2 mb-1">Arabic</h5>
+                            <img src="{{asset('9.png')}}" alt="Online Hifz Classes" class="mb-2" style="width:70px"/>
+                            <h5 class="h2 mb-1">Online Hifz Classes</h5>
                             <p class="fw-medium mb-0">
-                                Knowledge of Arabic opens the door to vast resources of Islamic knowledge. You can start learn it with us now.
+                                Master the art of Quran memorization with our comprehensive Hifz program. Become a Hafiz/Hafiza with expert guidance and structured learning.
                             </p><br>
-                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <a href="#landingContact" class="btn btn-primary">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -909,311 +899,6 @@
 
 
 
-    <!-- Pricing plans: Start -->
-    <section id="landingPricing" class="section-py landing-pricing islamic-bg">
-        <div class="container">
-            <div class="text-center mb-3 pb-1">
-                <span class="badge bg-label-primary">Pricing Plans</span>
-            </div>
-            <h3 class="text-center mb-1"><span class="section-title">Packages</span></h3>
-            <div class="row gy-4 pt-lg-3">
-                <!-- Basic Plan: Start -->
-                <div class="col-xl-4 col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="text-center">
-                                <img
-                                    src="{{asset('assets/img/front-pages/icons/paper-airplane.png')}}"
-                                    alt="paper airplane icon"
-                                    class="mb-4 pb-2 scaleX-n1-rtl" />
-                                <h4 class="mb-1">Package 1</h4>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$5.25</span>
-                                    <sub class="h6 text-muted mb-0 ms-1">/week</sub>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        Free Trial
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        30 minutes/class
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        3 days/week
-                                    </h5>
-                                </li>
-                            </ul>
-                            <div class="d-grid mt-4 pt-3">
-                                <a href="#Enroll" class="btn btn-label-primary">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Basic Plan: End -->
-                <!-- Basic Plan: Start -->
-                <div class="col-xl-4 col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="text-center">
-                                <img
-                                    src="{{asset('assets/img/front-pages/icons/paper-airplane.png')}}"
-                                    alt="paper airplane icon"
-                                    class="mb-4 pb-2 scaleX-n1-rtl" />
-                                <h4 class="mb-1">Package 2</h4>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$7.00</span>
-                                    <sub class="h6 text-muted mb-0 ms-1">/week</sub>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        Free Trial
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        30 minutes/class
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        4 days/week
-                                    </h5>
-                                </li>
-                            </ul>
-                            <div class="d-grid mt-4 pt-3">
-                                <a href="#Enroll" class="btn btn-label-primary">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Basic Plan: End -->
-                <div class="col-xl-4 col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="text-center">
-                                <img
-                                    src="{{asset('assets/img/front-pages/icons/paper-airplane.png')}}"
-                                    alt="paper airplane icon"
-                                    class="mb-4 pb-2 scaleX-n1-rtl" />
-                                <h4 class="mb-1">Package 3</h4>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$8.75</span>
-                                    <sub class="h6 text-muted mb-0 ms-1">/week</sub>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        Free Trial
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        30 minutes/class
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        5 days/week
-                                    </h5>
-                                </li>
-                            </ul>
-                            <div class="d-grid mt-4 pt-3">
-                                <a href="#Enroll" class="btn btn-label-primary">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="text-center">
-                                <img
-                                    src="{{asset('assets/img/front-pages/icons/paper-airplane.png')}}"
-                                    alt="paper airplane icon"
-                                    class="mb-4 pb-2 scaleX-n1-rtl" />
-                                <h4 class="mb-1">Package 4</h4>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$7.00</span>
-                                    <sub class="h6 text-muted mb-0 ms-1">/week</sub>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        Free Trial
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        60 minutes/class
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        2 days/week
-                                    </h5>
-                                </li>
-                            </ul>
-                            <div class="d-grid mt-4 pt-3">
-                                <a href="#Enroll" class="btn btn-label-primary">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="text-center">
-                                <img
-                                    src="{{asset('assets/img/front-pages/icons/paper-airplane.png')}}"
-                                    alt="paper airplane icon"
-                                    class="mb-4 pb-2 scaleX-n1-rtl" />
-                                <h4 class="mb-1">Package 5</h4>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$10.50</span>
-                                    <sub class="h6 text-muted mb-0 ms-1">/week</sub>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        Free Trial
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        60 minutes/class
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        3 days/week
-                                    </h5>
-                                </li>
-                            </ul>
-                            <div class="d-grid mt-4 pt-3">
-                                <a href="#Enroll" class="btn btn-label-primary">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="text-center">
-                                <img
-                                    src="{{asset('assets/img/front-pages/icons/paper-airplane.png')}}"
-                                    alt="paper airplane icon"
-                                    class="mb-4 pb-2 scaleX-n1-rtl" />
-                                <h4 class="mb-1">Package 6</h4>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$14.00</span>
-                                    <sub class="h6 text-muted mb-0 ms-1">/week</sub>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        Free Trial
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        60 minutes/class
-                                    </h5>
-                                </li>
-                                <li>
-                                    <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="bx bx-check bx-xs"></i
-                            ></span>
-                                        4 days/week
-                                    </h5>
-                                </li>
-                            </ul>
-                            <div class="d-grid mt-4 pt-3">
-                                <a href="#Enroll" class="btn btn-label-primary">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Pricing plans: End -->
 
     <!-- Fun facts: Start -->
     <section id="landingFunFacts" class="section-py landing-fun-facts islamic-bg">
@@ -1438,7 +1123,7 @@
                                         <div>
                                             <p class="mb-0">Email</p>
                                             <h5 class="mb-0">
-                                                <a href="mailto:tolba960@gmail.com" class="text-heading">tolba960@gmail.com</a>
+                                                <a href="mailto:qwayacademy@gmail.com" class="text-heading">qwayacademy@gmail.com</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -1450,7 +1135,7 @@
                                         </div>
                                         <div>
                                             <p class="mb-0">Phone</p>
-                                            <h5 class="mb-0"><a href="tel:+201033998231" class="text-heading">+20 10 33998231</a></h5>
+                                            <h5 class="mb-0"><a href="tel:+201122433589" class="text-heading">+20 112 243 3589</a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1505,9 +1190,9 @@
                                     <div class="col-md-4">
                                         <label class="form-label" for="contact-form-fullname">Course Title </label>
                                         <select type="number" class="form-control" required name="course" id="contact-form-fullname">
-                                            <option value="Quran with tajweed">Quran with tajweed</option>
-                                            <option value="Arabic">Arabic</option>
-                                            <option value="Islamic studies">Islamic studies</option>
+                                            <option value="Quran Iqraa Classes">Quran Iqraa Classes</option>
+                                            <option value="Quran Recitation for Kids">Quran Recitation for Kids</option>
+                                            <option value="Online Hifz Classes">Online Hifz Classes</option>
                                         </select>
                                     </div>
 
@@ -1690,7 +1375,7 @@
 
 <!-- WhatsApp Floating Button -->
 <div class="whatsapp-float">
-    <a href="https://wa.me/201033998231" target="_blank" class="whatsapp-link">
+    <a href="https://wa.me/201122433589" target="_blank" class="whatsapp-link">
         <i class="bx bxl-whatsapp"></i>
     </a>
 </div>
